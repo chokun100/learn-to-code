@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+        body{
+            font-family: 'Kanit';
+        }
+        .container{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:wheat;
+            padding: 20px;
+        }
+        .header{
+            font-size: 30px;
+            text-align: center;
+        }
+        .header-form{
+            width: 140px;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .form-input{
+            margin-bottom: 10px;
+        }
+
+        input.form, textarea{
+            border: 1px gainsboro solid;
+            width: 100%;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .button{
+            border: 0;
+            width: 100%;
+            height: 40px;
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header form-input">
+            Register Form
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">ชื่อจริง</div>
+            <input class="form" type="text" placeholder="Name">
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">นามสกุล</div>
+            <input class="form" type="text" placeholder="Lastname">
+        </div>
+        <div class="flex form-input">
+            <div class="header-form">อีเมล</div>
+            <input class="form" type="email" placeholder="Email">
+        </div>
+
+    <div class="gender flex form-input">
+        <div class="header-form"> เพศ </div>
+        <div>
+            <input type="radio" name="gender" value="male">ชาย
+            <input type="radio" name="gender" value="female">หญิง
+            <input type="radio" name="gender" value="other">อื่นๆ
+        </div>
+    </div>
+    <div class="form-input">
+        สิ่งที่สนใจ
+        <div>
+            <input type="checkbox" name="gender" value="male">หนังสือ
+        </div>
+        <div>
+            <input type="checkbox" name="gender" value="female">วิดีโอเกม
+        </div>
+        <div>
+            <input type="checkbox" name="gender" value="other">ติดหี
+        </div>
+        <div class="form-input">
+            คำอธิบายตัวตนเพิ่มเติม
+            <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-input center">
+        <a href="https://shopee.co.th" target="_blank">T&C</a>
+    </div>
+    <div class="center">
+        <button class="button">Submit</button>
+    </div>
+    </div>
+    
+</body>
+</html>
